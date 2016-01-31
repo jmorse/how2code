@@ -24,9 +24,61 @@
 \end{enumerate}
 
 \section{What's the point of programming?}
+\begin{enumerate}
+\item Mission statement of the robot
+\item Replicates decision process
+\item Illustrate example motions / arena path / whatever
+\item What's available to achieve this are inputs / outputs
+\item As we discussed, state space is huge
+\item What you want is a small program that achieves this all, and:
+\begin{itemize}
+	\item Can be well understood by the reader
+	\item Can be easily modified to do something different
+	\item Is robust (against unexpected things happening)
+\end{itemize}
+\end{enumerate}
+
 \section{Design patterns and state machines}
+\begin{enumerate}
+\item Programmers re-use lots of things. So should you.
+\item \textit{Design patterns} exist: common ways of thinking about things
+\item In the context of robotics, the \textit{state machine} is the most common
+\item There are thousands in your phone
+\item They have some exellent attributes:
+\begin{itemize}
+	\item Very limited number of states
+	\item Clear reasons for a decision being made
+	\item Easy to debug.
+	\item You can compose them
+\end{itemize}
+\item High level view of what states and transitions may be
+\end{enumerate}
+
 \section{A simple example}
-\section{Inputs and outputs}
+\begin{enumerate}
+\item Formally show some states and transitions
+\item Say that we're going to make a state machine for the example path above
+\item Do so
+\item Illustrate path with states / transitions, actually draw dot file?
+\item Show example code (python), explain syntax isn't important
+\end{enumerate}
+
 \section{Making it robust}
+\begin{enumerate}
+\item Self loops if things go wrong
+\item Think about valid error states and what to do
+\item Now consider full state space: what would you do?
+\item Ideally you consider all cases; just try for good coverage though
+\item Good code practice (functions etc)
+\end{enumerate}
+
+\section{Inputs and outputs}
+\begin{enumerate}
+\item Identify loop cycle of a state machine
+\item Read inputs and states, decide outputs, wait time, repeat
+\item Not sure what else
+\end{enumerate}
+
 \section{Summary}
+fgasdf
 \end{document}
