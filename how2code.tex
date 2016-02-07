@@ -1,4 +1,5 @@
 \documentclass[a4paper,10pt]{article}
+\usepackage{hhline}
 
 \title{How do I code?}
 \author{Student Robotics}
@@ -96,6 +97,24 @@ an action means operating robot outputs, such as motors, servos, or anything
 else you hook up to your robot. Lets consider a simple robot decision process:
 
 XXX insert here diagram of a robot doing something, currently in my logbook
+
+\begin{table*}[ht]
+\begin{tabular}{|l|l|l|l|}
+\hline
+Step & Sense & Decision & Action \\
+\hhline{|=|=|=|=|}
+1 & Token ahead \& right & Drive and turn to token & Drive motors in turn \\
+\hline
+2 & Token immediately ahead & Capture token & Move forward and capture \\
+\hline
+3 & Facing corner X & Turn to own corner & Perform turn \\
+\hline
+4 & Facing our corner & Drive back to corner & Drive forwards \\
+\hline
+5 & At our corner & Drop token & Drop token \\
+\hline
+\end{tabular}
+\end{table*}
 
 \begin{enumerate}
 \item Mission statement of the robot
