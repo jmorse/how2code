@@ -64,7 +64,39 @@ In the rest of this guide, we will look at
 	\item XXX more?
 \end{itemize}
 
-\section{What's the point of programming?}
+\section{What does your robot program do?}
+
+In Student Robotics, you will have been given a game for the robot to play, as
+defined in this years rulebook. The aim is to score the highest number of
+points, by performing some kind of task in the arena. If we were to put
+\textit{you}, a human, into the arena to perform this task, you would decide
+how best to score points and then move around the arena doing the actions that
+score points, reacting to what is in front of you and what the other
+participants are doing.
+
+Your robot, however, does not have the ability to do all those things. Because
+it is almost impossible to make your robot read and understand the rulebook,
+you will have to first decide a strategy for scoring points, and then make a
+robot program that implements that strategy. The former is your teams problem,
+the latter is what this guide is about.
+
+Let's look closer at how humans go about performing the task. For everything
+that we do, you can identify three main parts:
+\begin{enumerate}
+	\item We \textit{look} around the arena and work out what's in front of us
+	\item Using the point scoring strategy, we \textit{decide} what action is best to score points
+	\item We \textit{perform} the action
+\end{enumerate}
+
+We can replicate this decision process in a robot program pretty accurately:
+\textit{looking} around the arena corresponds to inputs from your robots webcam
+and sensors, gathering information about the environment. \textit{Deciding} is
+the operation of your robot program, using the input data. \textit{Performing}
+an action means operating robot outputs, such as motors, servos, or anything
+else you hook up to your robot. Lets consider a simple robot decision process:
+
+XXX insert here diagram of a robot doing something, currently in my logbook
+
 \begin{enumerate}
 \item Mission statement of the robot
 \item Replicates decision process
