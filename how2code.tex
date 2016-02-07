@@ -30,13 +30,39 @@ know four things:
 \end{enumerate}
 All of which are covered by the Python tour.
 
+Programming can be difficult, but at the same time a lot of people say that
+programming is easy!\footnote{https://code.org/} The difference is that it is
+easy to learn the building blocks of programming, but much more challenging to
+put them together into a large system. Think of juggling: we can all juggle
+a single ball, but every extra ball makes the task substantially more
+difficult, and once you start juggling different kinds of objects it gets
+even worse.
 
-\begin{enumerate}
-\item There's a conflict in what people say
-\item Differentiate syntax and application implementation
-\item Identify the state space of all the things as being the problem
-\item Say that this document describes a technique to get a handle on that
-\end{enumerate}
+Programming a robot is similar to juggling: if you know your robot is in one
+place and has certain things in front of it, it's easy to tell it what to do.
+If you don't know what's in front of it, correctly programming your robot
+becomes more difficult. That gets worse if you don't know it's location, and
+much much worse if there are other robots that may get in the way. If you
+consider all the locations that your robot, the arena tokens\footnote{Or other
+arena items, depending on what the competition game is}, and other robots
+may be in, there are thousands of different possibilities. Correctly handling
+all of these possibilities is not a simple task.
+
+Happily, there is a programming technique called a \textit{state machine} that
+is well suited to dealing with these problems. It won't tell you what decisions
+your robot should take, but it \textit{will} make it simple to write a program
+that makes those decisions, and can handle those thousands of possibilities.
+State machines are very popular --- your average smartphone will contain
+tens of thousands of hardware and software state machines.
+
+In the rest of this guide, we will look at
+\begin{itemize}
+	\item What is the aim of your robot program
+	\item What is a state machine?
+	\item An example state machine
+	\item How to make robust programs
+	\item XXX more?
+\end{itemize}
 
 \section{What's the point of programming?}
 \begin{enumerate}
