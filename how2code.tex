@@ -114,21 +114,27 @@ Step & Sense & Decision & Action \\
 5 & At our corner & Drop token & Drop token \\
 \hline
 \end{tabular}
+\label{table:decisions}
 \end{table*}
 
-\begin{enumerate}
-\item Mission statement of the robot
-\item Replicates decision process
-\item Illustrate example motions / arena path / whatever
-\item What's available to achieve this are inputs / outputs
-\item As we discussed, state space is huge
-\item What you want is a small program that achieves this all, and:
+The input, decision and output process of the actions in Figure~\ref{missing}
+are explained in Table~\ref{table:decisions}. As suggested in the introduction,
+if your robot always started in position 1 and the token was already at the
+position in the program, the robot would not need to make any decisions. But
+consider the things that might change when playing the game:
+
 \begin{itemize}
-	\item Can be well understood by the reader
-	\item Can be easily modified to do something different
-	\item Is robust (against unexpected things happening)
+	\item The robot sees multiple tokens
+	\item The robot see another token after picking one up
+	\item The robot can't see anything after picking a token up
+	\item Another robot collides with yours and makes it face a different corner, at any point
 \end{itemize}
-\end{enumerate}
+
+In all these cases, a human would act to best continue it's current task,
+either finding a token to pick up, or returning to the right corner. The key to
+this is \textit{remembering} the current task, and making decisions
+accordingly. As we'll see in the next section, the key feature of a ``state
+machine'' is that it remembers its current ``state''.
 
 \section{Design patterns and state machines}
 \begin{enumerate}
